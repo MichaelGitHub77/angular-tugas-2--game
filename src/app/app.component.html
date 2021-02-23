@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
+<hello name="Tugas Angular"></hello>
 <p>
-  Start editing to see some magic happen :)
+	x : <input type="text" [(ngModel)]="x"/>
+	<br>
+y : <input type="text" [(ngModel)]="y"/>
 </p>
+	<button (click)="Input()">Input</button>
+
+	<div *ngFor="let i of items">
+		<span *ngFor="let j of i">
+        {{j}}
+    </span>
+	</div>
+  	<button (click)="Reset()">Reset</button>
